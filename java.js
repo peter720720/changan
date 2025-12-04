@@ -69,7 +69,7 @@ const mediaContainer = document.getElementById("mediaContainer");
 const progressBar = document.getElementById("videoProgress");
 const progressContainer = document.getElementById("videoProgressContainer");
 
-const duration = 8000; // 8 seconds for all media
+const duration = 8000;
 const StartTime = Date.now();
 
 function loadMedia(index) {
@@ -101,7 +101,7 @@ function loadMedia(index) {
         window.location.href = item.link;
     });
 
-    // Add caption
+    
     const captionBox = document.createElement("div");
     captionBox.className = "caption-box";
     captionBox.innerHTML = `

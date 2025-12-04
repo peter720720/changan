@@ -1,0 +1,150 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+:root {
+    /* background color */
+    --bg-light: #f9f9f9;
+    --bg-black: #1a1a1a;
+    --bg-black-50: #222222;
+    --bg-black-100: #393939;
+    --bg-primary: #007bff;
+    --bg-success: #28a745;
+    --bg-danger: #dc3545;
+    --main-color: #2575fc;
+
+    /* Text color */
+    --text-light: #ffffff;
+    --text-dark: #000000;
+    --text-muted: #6c757d;
+    --text-primary: #007bff;
+    --text-warning: #ffc107;
+    --text-color: #f5f5f5;
+    --text-orange: #FF6B3D;
+    --text-purple: #A43DFF;
+    --text-bule: #3DA9FF;
+
+    --backgroundColor: #313133;
+    --iconColor: #1D6F56;
+    --cardColor: #3E3E3E;
+    --activeCardColor: #4B4B4B;
+    --textColor: #9E9EA0;
+    --currentMusic: #333335;
+    --progressBar: #ffa500;
+}
+
+.viewer {
+    width: 100%;
+    margin: auto;
+    position: relative;
+    overflow: hidden;
+}
+
+.viewer img,
+.viewer video {
+    width: 100%;
+    height: 50vh;
+    object-fit: cover;
+    cursor: pointer;
+}
+
+.top-overlay {
+    display: flex;
+    justify-content: space-between;
+    color: var(--text-color);
+    position: absolute;
+    z-index: 20;
+    top: -10%;
+}
+
+.caption-box {
+    position: absolute;
+    bottom: 40px;
+    left: 12%;
+    color: #fff;
+}
+
+.caption-box h3 {
+    line-height: 1.4;
+    font-size: 22px;
+}
+
+.caption-box p {
+    margin-bottom: 0.6rem;
+}
+.caption-box button {
+    background: transparent;
+    color: var(--text-color);
+    font-size: 15px;
+    margin-top: 2rem;
+    padding: 1rem;
+    border: 1px solid var(--text-warning);
+    cursor: pointer;
+    /* width: 80%; */
+}
+
+
+.progress-container {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 5px;
+    background: var(--bg-light);
+}
+
+.progress-bar {
+    height: 100%;
+    width: 0%;
+    background: var(--bg-light);
+    transition: width 0.1s linear;
+}
+
+.arrow-box {
+    display: none;
+    position: absolute;
+    right: 15rem;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 1rem;
+    cursor: default;
+    color: #fff;
+    font-size: 24px;
+}
+
+.arrow-left {
+    top: 70%;
+    transform: translateY(-50%);
+}
+
+.arrow-right {
+    margin-top: 1rem;
+    top: 80%;
+    transform: translateY(-50%);
+}
+
+
+@media (min-width: 1022px) {
+    .arrow-box {
+        display: block;
+        position: absolute;
+        right: 15rem;
+        background: rgba(0, 0, 0, 0.5);
+        padding: 1rem;
+        cursor: default;
+        color: #fff;
+        font-size: 24px;
+    }
+
+    .arrow-left {
+        top: 70%;
+        transform: translateY(-50%);
+    }
+
+    .arrow-right {
+        margin-top: 1rem;
+        top: 80%;
+        transform: translateY(-50%);
+    }
+}

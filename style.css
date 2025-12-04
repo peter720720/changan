@@ -39,7 +39,9 @@
 
 .viewer {
     width: 100%;
-    margin: auto;
+    margin: 0;
+    padding: 0;
+    /* margin: auto; */
     position: relative;
     overflow: hidden;
 }
@@ -54,13 +56,25 @@
 
 .top-overlay {
     display: flex;
-    justify-content: space-between;
+    align-items: center;
+    justify-content: space-around;
+    gap: 45%;
     color: var(--text-color);
     position: absolute;
+    width: 100%;
     z-index: 20;
-    top: -10%;
+    margin-top: -4.5rem;
+    top: 0px;
 }
 
+.CN a {
+    color: var(--text-color);
+    text-decoration: none;
+}
+
+.CN i {
+    font-size: 30px;
+}
 .caption-box {
     position: absolute;
     bottom: 40px;

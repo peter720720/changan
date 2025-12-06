@@ -177,6 +177,7 @@ nav {
     color: var(--text-dark);
     position: fixed;
     top: -12%;
+    overflow-x: hidden;
     transition: 0.35s ease;
     right: -100%;
     padding: 1.4rem;

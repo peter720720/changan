@@ -232,7 +232,7 @@ nav.active {
     color: var(--text-color);
     font-size: 20px;
     outline: none;
-    padding: 18px;
+    padding:  1.3rem;
     width: 100%;
 }
 

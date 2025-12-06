@@ -178,20 +178,14 @@ nav {
     top: -12%;
     transition: 0.35s ease;
     right: -100%;
-    padding: 2rem;
+    padding: 1.4rem;
     -webkit-backdrop-filter: blur(20px);
     width: 100%;
-    /* height: 100vh; */
     z-index: 999;
-    overflow-y: auto;
 }
 
 nav ul li{
-    margin-top: 4rem;
     margin-bottom: 1rem;
-    /* display: flex;
-    flex-direction: column;
-    justify-content: center; */
 }
 
 nav li a {
@@ -207,6 +201,7 @@ nav a {
 
 ul li{
     list-style-type: none;
+    line-height: 5;
 }
 
 nav.active {
@@ -215,12 +210,12 @@ nav.active {
 
 .logo2 {
     margin-left: -2rem;
-    margin-top: -1rem;
+    margin-top: -0.5rem;
 }
 
 .input {
     margin-top: -4rem;
-    /* margin-bottom: 1rem; */
+    margin-bottom: 1rem;
 }
 
 .icon .fa-angle-up {

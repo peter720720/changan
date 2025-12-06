@@ -6,11 +6,6 @@
     -webkit-tap-highlight-color: transparent;
 }
 
-body {
-    overflow-x: hidden;
-    height: 200vh;
-}
-
 :root {
     /* background color */
     --bg-light: #f9f9f9;
@@ -42,12 +37,18 @@ body {
     --progressBar: #ffa500;
 }
 
+body {
+    overflow-x: hidden;
+    height: 200vh;
+}
+
+
 .logo {
     margin-top: 0.4rem;
 }
 
 .viewer {
-    width: 109%;
+    width: 100%;
     margin: 0;
     padding: 0;
     box-sizing: border-box;

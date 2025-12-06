@@ -41,11 +41,14 @@ body {
     --progressBar: #ffa500;
 }
 
+.logo {
+    margin-top: 0.4rem;
+}
+
 .viewer {
     width: 100%;
     margin: 0;
     padding: 0;
-    /* margin: auto; */
     position: relative;
     overflow-x: hidden;
 }
@@ -62,24 +65,36 @@ body {
 .top-overlay {
     display: flex;
     align-items: center;
-    justify-content: space-around;
     gap: 45%;
     color: var(--text-color);
     position: absolute;
-    width: 100%;
+    width: 70%;
     z-index: 20;
     margin-top: -4.5rem;
     top: 0px;
 }
 
+.CN {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+#menuBtn {
+    cursor: pointer;
+    width: 30%;
+}
+
 .CN a {
     color: var(--text-color);
     text-decoration: none;
+    font-size: 20px;
 }
 
 .CN i {
-    font-size: 30px;
+    font-size: 28px;
 }
+
 .caption-box {
     position: absolute;
     bottom: 40px;
@@ -95,6 +110,7 @@ body {
 .caption-box p {
     margin-bottom: 0.6rem;
 }
+
 .caption-box button {
     background: transparent;
     color: var(--text-color);
@@ -103,7 +119,6 @@ body {
     padding: 1rem;
     border: 1px solid var(--text-warning);
     cursor: pointer;
-    /* width: 80%; */
 }
 
 
@@ -144,8 +159,87 @@ body {
     transform: translateY(-50%);
 }
 
+#closeBtn {
+    cursor: pointer;
+    display: none;
+    z-index: 1000;
+}
+
+nav {
+    background: rgba(0, 0, 0, 0.45);
+    backdrop-filter: blur(20px);
+    color: var(--text-dark);
+    position: fixed;
+    top: -12%;
+    transition: 0.35s ease;
+    right: -100%;
+    padding: 2rem;
+    -webkit-backdrop-filter: blur(20px);
+    width: 100%;
+    /* height: 100vh; */
+    z-index: 999;
+    overflow-y: auto;
+}
+
+nav ul li{
+    margin-top: 4rem;
+    margin-bottom: 1rem;
+    /* display: flex;
+    flex-direction: column;
+    justify-content: center; */
+}
+
+nav li a {
+    display: flex;
+    justify-content: space-between;
+}
+
+nav a {
+    color: var(--text-light);
+    font-size: 20px;
+    text-decoration: none;
+}
+
+ul li{
+    list-style-type: none;
+}
+
+nav.active {
+    right: 3px;
+}
+
+.logo2 {
+    margin-left: -2rem;
+    margin-top: -1rem;
+}
+
+.input {
+    margin-top: -4rem;
+    /* margin-bottom: 1rem; */
+}
+
+.icon .fa-angle-up {
+    display: none;
+}
+
+.input input {
+    background: transparent;
+    border: 1px solid var(--text-color);
+    color: var(--text-color);
+    font-size: 20px;
+    outline: none;
+    padding: 1.5rem;
+    width: 103%;
+}
+
 
 @media (min-width: 1022px) {
+
+    .viewer img,
+    .viewer video {
+        height: 80vh;
+    }
+
     .arrow-box {
         display: block;
         position: absolute;

@@ -14,14 +14,69 @@
 <body>
     <div class="top-overlay">
         <div class="logo">
-            <a href="#">
+            <a id="link" href="#">
                 <img src="/img/changan logo2.png" alt="">
             </a>
         </div>
         <div class="CN">
             <a href="#">CN</a>
             <i class="fa-solid fa-globe"></i>
+            <img id="menuBtn" src="/img/menu.png" alt="menu">
+            <i id="closeBtn" class="fa-solid fa-x"></i>
         </div>
+        <nav id="navBar">
+            <div class="logo2">
+                <a id="link" href="#">
+                    <img src="/img/changan logo2.png" alt="">
+                </a>
+            </div>
+            <div class="input">
+                <input type="search" placeholder="Search">
+            </div>
+            <ul>
+                <li>
+                    <a href="#">
+                        COMPANY
+                        <div class="icon">
+                            <i class="fa-solid fa-angle-up"></i>
+                            <i class="fa-solid fa-angle-down"></i>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        NEWSROOM
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        INNOVATIONS
+                        <div class="icon">
+                            <i class="fa-solid fa-angle-up"></i>
+                            <i class="fa-solid fa-angle-down"></i>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        SAUSTAINABILITY
+                        <div class="icon">
+                            <i class="fa-solid fa-angle-up"></i>
+                            <i class="fa-solid fa-angle-down"></i>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        BRANDS
+                        <div class="icon">
+                            <i class="fa-solid fa-angle-up"></i>
+                            <i class="fa-solid fa-angle-down"></i>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+        </nav>
     </div>
     <div class="viewer">
         <div id="mediaContainer"></div>
@@ -33,6 +88,7 @@
     </div>
 
     <script src="java.js"></script>
+    <script src="menu.js"></script>
 </body>
 
 </html>

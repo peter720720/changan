@@ -132,3 +132,6 @@ function nextSlide() {
 }
 
 loadMedia(currentIndex);
+
+
+

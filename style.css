@@ -8,6 +8,7 @@
 
 body {
     overflow-x: hidden;
+    height: 200vh;
 }
 
 :root {
@@ -229,7 +230,7 @@ nav.active {
     font-size: 20px;
     outline: none;
     padding: 1.5rem;
-    width: 103%;
+    width: 100%;
 }
 
 

@@ -13,3 +13,19 @@ closeBtn.addEventListener("click", () => {
     menuBtn.style.display = "block";
     navBar.classList.remove("active");
 });
+
+
+const dropdown = document.querySelector(".dropdown");
+const dropdownBtn = document.querySelector(".dropdown-btn");
+
+dropdownBtn.addEventListener("click", () => {
+    dropdown.classList.toggle("open");
+});
+
+
+const subDropdown = document.querySelector(".sub-dropdown");
+const subBtn = document.querySelector(".sub-dropdown-btn");
+
+subBtn.addEventListener("click", () => {
+    subDropdown.classList.toggle("open");
+});

@@ -167,10 +167,12 @@ body {
 }
 
 #closeBtn {
+    position: fixed;
     cursor: pointer;
     display: none;
     z-index: 1000;
-    margin-left: -1rem;
+    right: 5%;
+    /* margin-left: -5rem; */
 }
 
 nav {
@@ -179,7 +181,7 @@ nav {
     color: var(--text-dark);
     position: fixed;
     top: -12%;
-    overflow-x: hidden;
+    /* overflow-x: hidden; */
     transition: 0.35s ease;
     right: -100%;
     padding: 1.4rem;
@@ -205,7 +207,7 @@ nav a {
 
 ul li{
     list-style-type: none;
-    line-height: 5;
+    line-height: 3;
 }
 
 nav.active {
@@ -218,12 +220,19 @@ nav.active {
 }
 
 .input {
+    position: relative;
     margin-top: -4rem;
     margin-bottom: 1rem;
 }
 
-.icon .fa-angle-up {
-    display: none;
+.input .fa-magnifying-glass {
+    color: var(--text-color);
+    font-size: 20px;
+    position: absolute;
+    left: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    pointer-events: none;
 }
 
 .input input {
@@ -232,8 +241,86 @@ nav.active {
     color: var(--text-color);
     font-size: 20px;
     outline: none;
+    padding-left: 45px !important;
     padding:  1.3rem;
     width: 100%;
+}
+
+.input input::placeholder {
+    margin-right: 2rem;
+    color: var(--text-color) !important;
+}
+
+.dropdown-menu {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.35s ease;
+}
+
+.dropdown.open .dropdown-menu {
+    max-height: 300px;
+}
+
+.dropdown .fa-angle-up {
+    display: none;
+}
+
+.dropdown.open .fa-angle-up {
+    display: inline-block;
+}
+
+.dropdown.open .fa-angle-down {
+    display: none;
+}
+
+.dropdown-hr {
+    display: none;
+    border: 0;
+    border-top: 1px solid rgba(255, 255, 255, 0.4);
+    margin: 0.5rem 0;
+}
+
+.dropdown.open .dropdown-hr {
+    display: block;
+}
+
+.sub-dropdown-menu {
+    margin-left: -20px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.35s ease;
+}
+
+.sub-dropdown-open .sub-dropdown-menu {
+    max-height: 400px;
+}
+
+.sub-dropdown .fa-angle-up {
+    display: none;
+}
+
+.sub-dropdown.open .fa-angle-up {
+    display: inline-block;
+}
+
+.sub-dropdown.open .fa-angle-down {
+    display: none;
+}
+
+.sub-dropdown-menu .no-dot {
+    list-style: none;
+}
+
+.sub-dropdown-menu .with-dot {
+    list-style: disc;
+    margin-left: 20px;
+}
+
+.sub-dropdown-btn {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
 }
 
 

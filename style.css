@@ -61,7 +61,7 @@ body {
     height: 45vh;
     object-fit: cover;
     cursor: pointer;
-    /* overflow-x: hidden; */
+    overflow: hidden;
 }
 
 .top-overlay {
@@ -169,6 +169,7 @@ body {
     cursor: pointer;
     display: none;
     z-index: 1000;
+    margin-left: -1rem;
 }
 
 nav {
@@ -230,7 +231,7 @@ nav.active {
     color: var(--text-color);
     font-size: 20px;
     outline: none;
-    padding: 1.5rem;
+    padding: 18px;
     width: 100%;
 }
 

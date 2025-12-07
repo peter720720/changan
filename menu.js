@@ -23,9 +23,11 @@ dropdownBtn.addEventListener("click", () => {
 });
 
 
-const subDropdown = document.querySelector(".sub-dropdown");
-const subBtn = document.querySelector(".sub-dropdown-btn");
-
-subBtn.addEventListener("click", () => {
-    subDropdown.classList.toggle("open");
+document.querySelectorAll(".sub-dropdown-btn").forEach(btn => {
+    btn.addEventListener("click", (e) => {
+        e.preventDefault();
+        e.stopPropagation();
+        btn.parentElement.classList.toggle("open");
+    });
 });
+
